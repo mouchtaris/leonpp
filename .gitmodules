@@ -1,8 +1,8 @@
 [submodule "rxcpp"]
-	path = rxcpp
+	path = ext/rxcpp
 	url = https://github.com/Reactive-Extensions/RxCpp.git
 	branch = master
 [submodule "caf"]
-	path = CAF
+	path = ext/caf
 	url = https://github.com/actor-framework/actor-framework.git
 	branch = master
