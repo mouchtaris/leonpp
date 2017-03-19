@@ -5,11 +5,13 @@ project(cli VERSION 0.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+add_compile_options(-std=c++1z -Wall -Wextra -pedantic -g -O0)
 
 include_directories(
   ext/rxcpp/Rx/v2/src/
   )
 
-set(SOURCE_FILES src/main.cpp)
+set(SOURCE_FILES
+  src/main.cpp)
 add_executable(cli ${SOURCE_FILES})
 target_link_libraries(cli ${CAF_LIBRARIES})
